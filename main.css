@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+body{
+    background-color: #222;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --main-color:#076ea9;
+}
+
+.crud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.crud .container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.price{
+    display: flex;
+    flex-wrap: wrap;
+}
+.price span{
+    background-color: #111;
+    outline: none;
+    border: none;
+    margin: 5px;
+    padding: 15px;
+    color: white;
+    flex: 1;
+    border-radius: 10px;
+}
+.price span::before{
+    content: "Total=";
+}
+.crud .container input{
+    background-color: #111;
+}
+.crud .container input,
+.crud .container button{
+    outline: none;
+    border: none;
+    margin: 5px;
+    padding: 15px;
+    color: white;
+    flex: 1;
+    transition: .3s;
+    border-radius: 10px;
+}
+.crud .container input:focus{
+    outline: none;
+    transform: scale(1.05);
+
+}
+.btns{
+    display: flex;
+}
+.btn{
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 26px;
+}
+.table{
+    width: 100%;
+    overflow: auto;
+}
+table{
+    width: 100%;
+}
+
+tbody td{
+    text-align: center;
+    padding: 7px;
+}
+tbody button{
+    padding: 0;
+    margin: 0%;
+    flex:0;
+
+}
+
+.btn2{
+    background-color: var(--main-color);
+    border-radius: 50px;
+    padding: 7px 5px;
+    cursor: pointer;
+}
+#total{
+    transition: .3s;
+}
